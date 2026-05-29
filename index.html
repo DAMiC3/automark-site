@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoMark — AI marking for university tests</title>
+  <meta name="description" content="AutoMark marks long-form university test papers against your memo and stamps the marks straight onto the PDF. Mark a whole class in one click." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: { ink: '#0E1525', panel: '#111A2E' },
+        },
+      },
+    };
+  </script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .accent { color: #6366F1; }
+    .bg-accent { background-color: #4F46E5; }
+    .bg-accent:hover { background-color: #4338CA; }
+  </style>
+</head>
+<body class="bg-ink text-slate-300 antialiased">
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-30 bg-ink/80 backdrop-blur border-b border-white/5">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-2.5">
+        <div class="w-7 h-7 rounded-[7px] bg-accent"></div>
+        <span class="text-white font-bold text-[17px]">AutoMark</span>
+      </div>
+      <nav class="hidden sm:flex items-center gap-8 text-[14px] text-slate-400">
+        <a href="#how" class="hover:text-white transition-colors">How it works</a>
+        <a href="#features" class="hover:text-white transition-colors">Features</a>
+        <a href="#pricing" class="hover:text-white transition-colors">Pricing</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="#" class="text-[14px] text-slate-300 hover:text-white transition-colors">Sign in</a>
+        <a href="#pricing" class="bg-accent text-white text-[14px] font-semibold px-4 py-2 rounded-lg transition-colors">Get started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10">
+      <div class="absolute top-[-10rem] left-1/2 -translate-x-1/2 w-[40rem] h-[40rem] rounded-full bg-indigo-600/20 blur-[120px]"></div>
+    </div>
+    <div class="max-w-4xl mx-auto px-6 pt-24 pb-20 text-center">
+      <span class="inline-block text-[13px] font-medium text-indigo-300 bg-indigo-500/10 border border-indigo-400/20 rounded-full px-4 py-1.5 mb-6">
+        AI marking for long-form answers
+      </span>
+      <h1 class="text-white font-extrabold tracking-tight text-[40px] sm:text-[56px] leading-[1.05]">
+        Mark a whole class<br class="hidden sm:block" /> in <span class="accent">one click.</span>
+      </h1>
+      <p class="mt-6 text-[18px] text-slate-400 max-w-2xl mx-auto leading-relaxed">
+        AutoMark grades university test papers against <em>your</em> memo — rewarding accuracy, not waffle — and stamps the marks, ticks and comments straight onto the PDF. You stay in control of every mark.
+      </p>
+      <div class="mt-9 flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="#pricing" class="bg-accent text-white font-semibold text-[15px] px-7 py-3.5 rounded-xl shadow-lg shadow-indigo-900/40 transition-colors">Get started</a>
+        <a href="#how" class="border border-white/15 text-white font-semibold text-[15px] px-7 py-3.5 rounded-xl hover:bg-white/5 transition-colors">See how it works</a>
+      </div>
+      <p class="mt-5 text-[13px] text-slate-500">Marks against your memo · You override anything · Works on PDFs</p>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how" class="py-20 border-t border-white/5">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-center text-white font-bold text-[30px] tracking-tight">Marking in three steps</h2>
+      <p class="text-center text-slate-400 mt-3 max-w-xl mx-auto">No new system to learn. Point it at your files and go.</p>
+      <div class="grid sm:grid-cols-3 gap-5 mt-12">
+        <div class="bg-panel border border-white/5 rounded-2xl p-6">
+          <div class="w-9 h-9 rounded-lg bg-accent text-white font-bold flex items-center justify-center mb-4">1</div>
+          <h3 class="text-white font-semibold text-[16px]">Add your memo</h3>
+          <p class="text-slate-400 text-[14px] mt-2 leading-relaxed">Upload the memo once — it's saved to your archive and reused across every batch.</p>
+        </div>
+        <div class="bg-panel border border-white/5 rounded-2xl p-6">
+          <div class="w-9 h-9 rounded-lg bg-accent text-white font-bold flex items-center justify-center mb-4">2</div>
+          <h3 class="text-white font-semibold text-[16px]">Point to the papers</h3>
+          <p class="text-slate-400 text-[14px] mt-2 leading-relaxed">Connect a folder of student test PDFs and pick the subject and strictness.</p>
+        </div>
+        <div class="bg-panel border border-white/5 rounded-2xl p-6">
+          <div class="w-9 h-9 rounded-lg bg-accent text-white font-bold flex items-center justify-center mb-4">3</div>
+          <h3 class="text-white font-semibold text-[16px]">Click Mark</h3>
+          <p class="text-slate-400 text-[14px] mt-2 leading-relaxed">Get marked PDFs back — ticks, scores and comments on the page, with a total and overall remark.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-20 border-t border-white/5">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-center text-white font-bold text-[30px] tracking-tight">Built to be trusted</h2>
+      <p class="text-center text-slate-400 mt-3 max-w-xl mx-auto">Accurate marking you can check, override and stand behind.</p>
+      <div class="grid sm:grid-cols-2 gap-5 mt-12">
+        <div class="bg-panel border border-white/5 rounded-2xl p-6">
+          <h3 class="text-white font-semibold text-[16px]">Marks against your memo</h3>
+          <p class="text-slate-400 text-[14px] mt-2 leading-relaxed">The memo is the single source of truth. It rewards correct content — never length or fancy writing — and never invents marks.</p>
+        </div>
+        <div class="bg-panel border border-white/5 rounded-2xl p-6">
+          <h3 class="text-white font-semibold text-[16px]">Marks on the actual paper</h3>
+          <p class="text-slate-400 text-[14px] mt-2 leading-relaxed">Ticks, crosses, half-marks and short comments are stamped onto the PDF — just like marking by hand, but in seconds.</p>
+        </div>
+        <div class="bg-panel border border-white/5 rounded-2xl p-6">
+          <h3 class="text-white font-semibold text-[16px]">You set the strictness</h3>
+          <p class="text-slate-400 text-[14px] mt-2 leading-relaxed">A simple slider from lenient to strict tunes how generously partial credit is given — and you can override any mark.</p>
+        </div>
+        <div class="bg-panel border border-white/5 rounded-2xl p-6">
+          <h3 class="text-white font-semibold text-[16px]">Whole batches at once</h3>
+          <p class="text-slate-400 text-[14px] mt-2 leading-relaxed">Mark a folder of papers in one go. Choose instant results, or a cheaper batch run for big exam piles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-20 border-t border-white/5">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-center text-white font-bold text-[30px] tracking-tight">Simple pricing</h2>
+      <p class="text-center text-slate-400 mt-3 max-w-xl mx-auto">Pick a plan, mark away. Run out? Just renew.</p>
+      <div class="grid sm:grid-cols-2 gap-5 mt-12">
+        <div class="bg-panel border border-white/5 rounded-2xl p-7 flex flex-col">
+          <h3 class="text-white font-bold text-[18px]">Standard</h3>
+          <p class="text-slate-400 text-[14px] mt-1">Great for regular marking.</p>
+          <div class="mt-5"><span class="text-white font-extrabold text-[34px]">R1000</span><span class="text-slate-500 text-[15px]"> / month</span></div>
+          <ul class="mt-6 space-y-2.5 text-[14px] text-slate-300 flex-1">
+            <li class="flex gap-2"><span class="accent">✓</span> Full AI marking</li>
+            <li class="flex gap-2"><span class="accent">✓</span> Hundreds of papers a month</li>
+            <li class="flex gap-2"><span class="accent">✓</span> Marks stamped on the PDF</li>
+          </ul>
+          <a href="#" class="mt-7 text-center border border-white/15 text-white font-semibold text-[14px] py-3 rounded-xl hover:bg-white/5 transition-colors">Choose Standard</a>
+        </div>
+        <div class="bg-panel border border-indigo-500/40 ring-1 ring-indigo-500/40 rounded-2xl p-7 flex flex-col relative">
+          <span class="absolute top-5 right-5 text-[11px] font-semibold text-indigo-300 bg-indigo-500/15 px-2.5 py-1 rounded-full">Most popular</span>
+          <h3 class="text-white font-bold text-[18px]">Pro</h3>
+          <p class="text-slate-400 text-[14px] mt-1">For large groups & exam season.</p>
+          <div class="mt-5"><span class="text-white font-extrabold text-[34px]">R3000</span><span class="text-slate-500 text-[15px]"> / month</span></div>
+          <ul class="mt-6 space-y-2.5 text-[14px] text-slate-300 flex-1">
+            <li class="flex gap-2"><span class="accent">✓</span> 5× the monthly allowance</li>
+            <li class="flex gap-2"><span class="accent">✓</span> Best for exam season</li>
+            <li class="flex gap-2"><span class="accent">✓</span> High-accuracy marking option</li>
+          </ul>
+          <a href="#" class="mt-7 text-center bg-accent text-white font-semibold text-[14px] py-3 rounded-xl transition-colors">Choose Pro</a>
+        </div>
+      </div>
+      <p class="text-center text-slate-500 text-[13px] mt-6">Activate with a simple EFT — no card needed.</p>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-20 border-t border-white/5">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-white font-bold text-[32px] tracking-tight">Get your weekends back.</h2>
+      <p class="text-slate-400 mt-4 text-[17px]">Let AutoMark handle the first pass, and spend your time on the marks that matter.</p>
+      <a href="#pricing" class="inline-block mt-8 bg-accent text-white font-semibold text-[15px] px-8 py-3.5 rounded-xl shadow-lg shadow-indigo-900/40 transition-colors">Get started</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 py-10">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2.5">
+        <div class="w-6 h-6 rounded-md bg-accent"></div>
+        <span class="text-white font-semibold">AutoMark</span>
+      </div>
+      <p class="text-slate-500 text-[13px] flex items-center gap-1.5">
+        <svg class="w-3.5 h-3.5 text-slate-500" viewBox="0 0 24 24" fill="currentColor"><path d="M10 2h4v5h5v4h-5v11h-4V11H5V7h5z" /></svg>
+        Created by a Christian · AutoMark
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
