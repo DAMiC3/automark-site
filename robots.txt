@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://damic3.github.io/automark-site/sitemap.xml
